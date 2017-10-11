@@ -13,13 +13,7 @@
       <?php
       if( get_post_format() ) {
          get_template_part( 'inc/post-formats' );
-      } elseif( has_post_thumbnail() ) { ?>
-         <figure>
-            <?php
-            the_post_thumbnail('large-thumb');
-            ?>
-         </figure>
-      <?php } ?>
+      }?>
 
       <div class="entry-info">
          <?php masonic_posted_on(); ?>
@@ -37,6 +31,12 @@
       ));
       ?>
    </div><!-- .entry-content -->
+
+   <?php
+    if ( class_exists( 'Jetpack_Likes' ) ) {
+    $custom_likes = new Jetpack_Likes;
+    echo $custom_likes->post_likes( '' );
+    }?>
 </article><!-- #post-## -->
 
 <?php if (get_the_author_meta('description')): ?>
