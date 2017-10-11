@@ -517,12 +517,12 @@ a:hover, a:focus, a:active {
 7.0 Alignments
 --------------------------------------------------------------*/
 .alignleft {
-	display: inline;
+	display: block;
 	float: left;
 	margin-right: 1.5em;
 }
 .alignright {
-	display: inline;
+	display: block;
 	float: right;
 	margin-left: 1.5em;
 }
@@ -848,6 +848,7 @@ footer .blog-post{
 	float: left;
 }
 .site-title {
+	float: none;
 	font-size: 65px;
 	margin-bottom: -10px;
 }
@@ -863,7 +864,7 @@ footer .blog-post{
 	margin: -10px 0 0;
 }
 .site-content {
-	padding:50px 0;
+	padding: 0;
 }
 .angled-background {
 	background: none repeat scroll 0 0 black;
@@ -877,7 +878,7 @@ footer .blog-post{
 10.2 Posts and pages
 --------------------------------------------------------------*/
 .blog-header {
-	background: none repeat scroll 0px 0px #1D1D1D;
+	background: none repeat scroll 0px 0px #FFF;
 	font-weight: bold;
 	padding: 60px 0 30px;
 }
@@ -885,7 +886,10 @@ footer .blog-post{
 	float: left;
 	margin-left: 20px;
 }
-.blog-site-title h1,
+.blog-site-title h1 {
+	color: #955193;
+	font-size: 22px;
+}
 .blog-site-title h2{
 	color: #ccc;
 	font-size: 22px;
@@ -1407,19 +1411,16 @@ nav.woocommerce-pagination ul li a {
 }
 .site-header-text {
 	 bottom: 20px;
-	 /*margin: 0 30px;*/
 	 position: absolute;
 }
 .main-header {
-	 /*float: left;*/
-	 /*margin: 5px 20px 0 0;*/
 	 position: relative;
 }
 
 	.site-title {
+		float: none;
 		font-size: 50px;
 		line-height: 60px;
-		 /*font-size: 46px;*/
 		 word-break: break-all;
 	}
 	nav {
@@ -1562,9 +1563,6 @@ nav.woocommerce-pagination ul li a {
 	.meta-info {
 		margin: 65px 0 0;
 	}
-	.catagory-type {
-		position: absolute;
-	}
 	.catagory-type a {
 		position: relative;
 		z-index: 999;
@@ -1611,7 +1609,7 @@ nav.woocommerce-pagination ul li a {
 	.site-title h1 a:hover{
 		color: #955193;
 	}
-	.site-description {
+	.main-header {
 		display: none;
 	}
 	.submenu li{
@@ -1746,7 +1744,30 @@ nav.woocommerce-pagination ul li a {
 .entry-info .catagory-type > a {
 	color: #fff;	
 }
-entry-tag fa fa-tags::before {
-	margin-right: 5px;
+
+.dp-share-icon {
+	margin-left: 20px;
+}
+
+.dp-share-icon a {
+	vertical-align: middle;
+	font: normal 18px/1 FontAwesome;
+	margin-left: 5px;
+}
+.dp-facebook:before {
+ content: '\f082';
+}
+.dp-twitter:before {
+ content: '\f081';
+}
+.dp-linkedin:before {
+ content: '\f08c';
+}
+.dp-pinterest:before {
+ content: '\f0d3';
+}
+
+.jetpack-likes-widget-wrapper {
+	margin-left: 20px;
 }
 /*------------Custom CSS End-----------------------------------------*/
