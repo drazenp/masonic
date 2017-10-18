@@ -483,6 +483,9 @@ a:hover, a:focus, a:active {
 .edit-link{
 	display: none;
 }
+.entry-content a {
+	text-decoration:underline;
+}
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
