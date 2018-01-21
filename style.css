@@ -130,8 +130,7 @@ b, strong {
 }
 dfn, cite, i {
 	margin:5px;
-	text-transform:uppercase;
-	display:block;
+	display:inline;
 }
 blockquote {
 	border-left: 2px solid #955193;
@@ -823,7 +822,7 @@ footer .blog-post{
 10.1 Header
 --------------------------------------------------------------*/
 .site-header {
-	background: none repeat scroll 0 0 #333;
+	background: none repeat scroll 0 0 #998999;
 }
 .header-image {
 	overflow: hidden;
