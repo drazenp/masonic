@@ -13,11 +13,13 @@
    <head>
       <meta charset="<?php bloginfo('charset'); ?>">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Remote Pal is a personal blog and a support zone for virtual assistants with a goal to empower, improve productivity and celebrate wins.">
+
       <link rel="profile" href="http://gmpg.org/xfn/11">
       <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-      <meta name="google-site-verification" content="BBMNUhooP66b_gcD_87gXVZU5YT7AyWHnku5frXTB9Q" />
-    <meta name="yandex-verification" content="6e61fa18dbb9dfb2" />
-    <meta name="msvalidate.01" content="F528397E3312C991E360A7A45FCF2CCA" />
+<meta name="google-site-verification" content="BBMNUhooP66b_gcD_87gXVZU5YT7AyWHnku5frXTB9Q" />
+<meta name="yandex-verification" content="6e61fa18dbb9dfb2" />
+<meta name="msvalidate.01" content="F528397E3312C991E360A7A45FCF2CCA" />
 
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
