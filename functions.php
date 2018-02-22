@@ -221,25 +221,6 @@ function masonic_read_more($more) {
 
 add_filter('excerpt_more', 'masonic_read_more');
 
-/**
- * function to show the footer info, copyright information
- */
-/*if (!function_exists('masonic_footer_copyright')) :
-
-   function masonic_footer_copyright() {
-      $wp_link = '<a href="' . 'http://wordpress.org' . '" target="_blank" title="' . esc_attr__('WordPress', 'masonic') . '"><span>' . __('WordPress', 'masonic') . '</span></a>';
-
-      $tg_link = '<a href="' . 'http://themegrill.com/themes/masonic' . '" target="_blank" title="' . esc_attr__('ThemeGrill', 'masonic') . '" rel="author"><span>' . __('ThemeGrill', 'masonic') . '</span></a>';
-
-      $default_footer_value = sprintf(__('Powered by %s', 'masonic'), $wp_link) . ' <br> ' . sprintf(__('Theme: %2$s by %1$s', 'masonic'), $tg_link, 'Masonic');
-
-      $masonic_footer_copyright = $default_footer_value;
-      echo $masonic_footer_copyright;
-   }
-
-endif; */
-//add_action('masonic_footer_copyright', 'masonic_footer_copyright', 10);
-
 // Adding the ID and CLASS attributes to the first <ul> occurence in wp_page_menu for supporting the default menu
 function masonic_add_menuclass($ul) {
    return preg_replace('/<ul>/', '<ul id="menu" class="menu wrapper">', $ul);
@@ -307,7 +288,7 @@ add_action( 'save_post', 'masonic_post_meta_save' );
 
 function masonic_meta_box_display_toggle() {
    $custom_script = '
-   <script type="text/javascript">
+   <script>
       jQuery(document).ready(function() {
          // hide the div by default
          jQuery( "#post-video-url" ).hide();

@@ -57,7 +57,7 @@ if (!function_exists('masonic_header_style')) :
 
       // If we get this far, we have custom styles. Let's do this.
       ?>
-      <style type="text/css">
+      <style>
       <?php
 // Has the text been hidden?
       if ('blank' == $header_text_color) :
@@ -91,7 +91,7 @@ if (!function_exists('masonic_admin_header_style')) :
     */
    function masonic_admin_header_style() {
       ?>
-      <style type="text/css">
+      <style>
          .appearance_page_custom-header #headimg {
             border: none;
          }
