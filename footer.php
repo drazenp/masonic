@@ -37,12 +37,9 @@
          <?php } ?>
       </div>
       <div class="copyright clear">
-         <div class="copyright-header"><?php echo bloginfo('name'); ?></div>
-         <div class="copyright-year"><?php
-            _e('&copy; ', 'masonic');
-            echo date('Y');
-            ?></div>
-         <?php masonic_footer_copyright(); ?>
+         <div class="copyright-header"><?php echo bloginfo('name'); ?>
+         <a><span>Copyright © 2018</span></a>
+        </div>
       </div>
    </div>
    <div class="angled-background"></div>

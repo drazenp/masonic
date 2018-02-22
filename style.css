@@ -1219,16 +1219,12 @@ address .fa {
 	font-weight: bold;
 	padding: 10px 0;
 }
-.copyright .copyright-year {
-	color: #9c9c9c;
-	margin: -45px 11px 30px;
+.copyright{
+	color: #9C9C9C;
 }
 .social li {
 	float: left;
 	margin-right: 10px;
-}
-.copyright{
-	color: #9C9C9C;
 }
 footer .angled-background {
 	background: none repeat scroll 0 0 #333;
@@ -1722,8 +1718,7 @@ nav.woocommerce-pagination ul li a {
 }
 
 /*------------Custom CSS Start---------------------------------------*/
-.angled-background,
-.copyright-year {
+.angled-background {
 	display: none;
 }
 

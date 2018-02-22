@@ -224,7 +224,7 @@ add_filter('excerpt_more', 'masonic_read_more');
 /**
  * function to show the footer info, copyright information
  */
-if (!function_exists('masonic_footer_copyright')) :
+/*if (!function_exists('masonic_footer_copyright')) :
 
    function masonic_footer_copyright() {
       $wp_link = '<a href="' . 'http://wordpress.org' . '" target="_blank" title="' . esc_attr__('WordPress', 'masonic') . '"><span>' . __('WordPress', 'masonic') . '</span></a>';
@@ -237,8 +237,8 @@ if (!function_exists('masonic_footer_copyright')) :
       echo $masonic_footer_copyright;
    }
 
-endif;
-add_action('masonic_footer_copyright', 'masonic_footer_copyright', 10);
+endif; */
+//add_action('masonic_footer_copyright', 'masonic_footer_copyright', 10);
 
 // Adding the ID and CLASS attributes to the first <ul> occurence in wp_page_menu for supporting the default menu
 function masonic_add_menuclass($ul) {
