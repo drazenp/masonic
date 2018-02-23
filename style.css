@@ -820,6 +820,7 @@ footer .blog-post{
 	overflow: hidden;
 	min-height: 150px;
 	text-align: center;
+	font-size: 0;
 }
 .site-branding {
 	width: 100%;
