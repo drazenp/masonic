@@ -38,10 +38,11 @@
       </div>
       <div class="copyright clear">
          <div class="copyright-header"><?php echo bloginfo('name'); ?>
-         <a><span>Copyright © 2018</span></a>
+         <a href="#" id="copyrightLink"><span>Copyright © 2018</span></a>
         </div>
       </div>
    </div>
+   <span class="popuptext" id="copyrightPopup">A Simple Popup!</span>
    <div class="angled-background"></div>
 </footer>
 
