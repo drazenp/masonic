@@ -157,7 +157,9 @@ function masonic_scripts() {
       wp_enqueue_script('masonic-setting', get_template_directory_uri() . '/js/masonry-setting.js', array('jquery-masonry', 'jquery'), '20150106', true);
    }
 
-   wp_enqueue_script('masonic-search-toggle', get_template_directory_uri() . '/js/search-toggle.js', array('jquery'), '20150106', true);
+   wp_enqueue_script('masonic-thirdparty', get_template_directory_uri() . '/js/thirdparty.js', array('jquery'), '20150106', true);
+   
+   wp_enqueue_script('masonic-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '20150106', true);
 
    wp_enqueue_script('masonic-fitvids', get_template_directory_uri() . '/js/fitvids/jquery.fitvids.js', array('jquery'), '20150331', true);
 
