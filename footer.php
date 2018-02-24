@@ -38,11 +38,16 @@
       </div>
       <div class="copyright clear">
          <div class="copyright-header"><?php echo bloginfo('name'); ?>
-         <a href="#" id="copyrightLink"><span>Copyright © 2018</span></a>
+         <a href="#" class="popoutLink" id="copyrightLink"><span>Copyright © 2018</span></a>
         </div>
       </div>
    </div>
-   <span class="popuptext" id="copyrightPopup">A Simple Popup!</span>
+   <span class="popupContent" id="copyrightPopup">
+     <h4>Copyright</h4>
+      <p>All content on this web site is the property of Remote Pal.</p>
+      <p>Theme: Masonic by <a href="http://themegrill.com/themes/masonic" target="_blank" title="ThemeGrill" rel="author"><span>ThemeGrill</span></a><p>
+      <p>Header vector created by <a href="https://www.freepik.com/free-photos-vectors/background">Freepik</a>
+    </span>
    <div class="angled-background"></div>
 </footer>
 
