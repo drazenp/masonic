@@ -147,7 +147,7 @@ add_action('widgets_init', 'masonic_widgets_init');
  * Enqueue scripts and styles.
  */
 function masonic_scripts() {
-   wp_enqueue_style('masonic-style', get_stylesheet_uri());
+    wp_enqueue_style('masonic-style', get_stylesheet_uri(), array(), '20180223');
 
    wp_enqueue_style('masonic-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,300italic,700');
 
