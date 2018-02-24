@@ -235,7 +235,7 @@ function masonic_customizer_css() {
            ';
    }
    ?>
-   <style type="text/css"><?php echo $customizer_css; ?></style>
+   <style><?php echo $customizer_css; ?></style>
    <?php
    if (get_theme_mod('masonic_custom_css') && ! function_exists( 'wp_update_custom_css_post' ) ) {
       $customizer_css .= get_theme_mod('masonic_custom_css');

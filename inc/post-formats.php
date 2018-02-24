@@ -1,6 +1,6 @@
 <?php if ( has_post_format( 'gallery' ) ) : ?>
    <?php do_action( 'masonic_gallery_images' ); ?>
-   <script type="text/javascript">
+   <script>
       jQuery(document).ready(function(){
          jQuery('.gallery-images').bxSlider({
             mode: 'fade',

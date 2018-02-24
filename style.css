@@ -1181,7 +1181,6 @@ article .post.shown, .no-js article .post, .no-cssanimations article .post {
 	overflow:hidden;
 }
 .footer-content {
-	padding:30px 0;
 	position:relative;
 	z-index:9;
 	overflow: hidden;
@@ -1220,16 +1219,12 @@ address .fa {
 	font-weight: bold;
 	padding: 10px 0;
 }
-.copyright .copyright-year {
-	color: #9c9c9c;
-	margin: -45px 11px 30px;
+.copyright{
+	color: #9C9C9C;
 }
 .social li {
 	float: left;
 	margin-right: 10px;
-}
-.copyright{
-	color: #9C9C9C;
 }
 footer .angled-background {
 	background: none repeat scroll 0 0 #333;
@@ -1722,9 +1717,10 @@ nav.woocommerce-pagination ul li a {
 	}
 }
 
-/*------------Custom CSS Start---------------------------------------*/
-.angled-background,
-.copyright-year {
+/*--------------------------------------------------------------
+14.0 Custom CSS Start
+--------------------------------------------------------------*/
+.angled-background {
 	display: none;
 }
 
@@ -1764,4 +1760,78 @@ nav.woocommerce-pagination ul li a {
 .jetpack-likes-widget-wrapper {
 	margin-left: 20px;
 }
-/*------------Custom CSS End-----------------------------------------*/
+/*--------------------------------------------------------------
+15.0 Copyright popout
+--------------------------------------------------------------*/
+
+.popup_back {
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.popup_cont {
+	position: fixed;
+	z-index: 102;
+}
+
+.preloader {
+	z-index: 101;
+}
+
+.popup_close {
+	color: #888;
+	cursor: pointer;
+	position: absolute;
+	padding: 5px;
+	right: 5px;
+	top: 0;
+}
+
+.popup_close::before {
+	display:inline-block;
+	text-align:center;
+	content:"\00d7";
+	font-size:35px;
+	color:#955193;
+	width:20px;
+	line-height:20px
+}
+   
+.popup_close:hover {
+	color: #111;
+}
+
+.popup_back {
+	cursor: pointer;
+	background-color: #222;
+}
+
+div.popup {
+	background: #fff;
+	padding: 25px;
+	box-shadow: 0 3px 10px #222;
+}
+
+.preloader {
+	left: 50%;
+	margin: -10px 0 0 -25px;
+	position: fixed;
+	top: 50%;
+}
+
+.popupContent {
+	display: none;
+}
+
+.popup_content h4 {
+	color: #955193;
+	padding-bottom: 10px;
+}
+
+.popup_content p {
+	margin-bottom: 0.3em;
+}
