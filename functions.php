@@ -144,6 +144,17 @@ function masonic_widgets_init() {
 add_action('widgets_init', 'masonic_widgets_init');
 
 /**
+* Dequeue jQuery Migrate script in WordPress.
+*/
+function isa_remove_jquery_migrate( &$scripts) {
+    if(!is_admin()) {
+        $scripts->remove('jquery');
+        $scripts->add('jquery', false, array('jquery-core' ), '1.12.4' );
+    }
+}
+add_filter( 'wp_default_scripts', 'isa_remove_jquery_migrate' );
+
+/**
  * Enqueue scripts and styles.
  */
 function masonic_scripts() {
